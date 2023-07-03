@@ -6,6 +6,7 @@
   padding: 0;
   background: #161e31;
   font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
 }
 /*----------Header----------*/
 
@@ -15,8 +16,9 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10%;
+  height: 10vh;
   border-bottom: 2px solid #f9b17a;
+  z-index: 1;
 }
 
 .nav-list {
@@ -34,7 +36,6 @@ nav {
 a {
   color: #fff;
   text-decoration: none;
-  transition: opacity 0.3s;
 }
 
 .dot {
@@ -69,7 +70,79 @@ a {
 /*----------Mid----------*/
 
 .mid {
+  position: relative;
   width: 100vw;
-  height: 90vh;
-  background-color: #f9b17a;
+  height: 70vh;
+  transform: translateY(10vh);
+  bottom: 0;
+  z-index: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100vw;
+  height: 70vh;
+}
+
+.nome-div {
+  position: relative;
+  transform: translate(20%, 40%);
+  color: #fff;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.img {
+  position: relative;
+  transform: translateY(50%);
+  color: #fff;
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+}
+
+.nome {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.intro {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.prof {
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 2px;
+}
+
+/*----------Bottom----------*/
+
+.bottom {
+  width: 100vw;
+  height: 120vh;
+  background-color: #0e131f;
+}
+
+/*----------Scroll----------*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161e31;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f9b17a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 199, 156);
 }
