@@ -102,15 +102,6 @@ a {
   grid-row: 1;
 }
 
-.img {
-  position: relative;
-  transform: translateY(50%);
-  color: #fff;
-  grid-column: 2;
-  grid-row: 1;
-  text-align: center;
-}
-
 .nome {
   font-family: 'VT323', 'Roboto', sans-serif;
   margin-left: 5px;
@@ -149,12 +140,11 @@ a {
 
 .img {
   position: absolute;
-  right: 100px;
-  top: 160px;
-  grid-column: 2;
+  bottom: 0;
+  right: 20%;
 }
 img {
-  width: 280px;
+  width: 300px;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -167,13 +157,13 @@ img {
 
 @keyframes upDown {
   0% {
-    top: 160px;
+    bottom: 0;
   }
   50% {
-    top: 140px;
+    bottom: 20px;
   }
   100% {
-    top: 160px;
+    bottom: 0;
   }
 }
 
@@ -181,7 +171,7 @@ img {
 
 .bottom {
   width: 100vw;
-  height: 120vh;
+  height: 100vh;
   background-color: #0e131f;
 }
 
