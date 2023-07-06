@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -41,10 +43,12 @@ a {
 .dot {
   color: #f9b17a;
   transition: color 0.3s;
+  font-family: 'VT323', 'Roboto', sans-serif;
 }
 
 .logo {
-  font-size: 23px;
+  font-family: 'VT323', 'Roboto', sans-serif;
+  font-size: 40px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -105,6 +109,7 @@ a {
 }
 
 .nome {
+  font-family: 'VT323', 'Roboto', sans-serif;
   margin-left: 5px;
   margin-bottom: 10px;
 }
@@ -124,26 +129,49 @@ a {
 
 .email {
   position: absolute;
-  transform: translate(10%, 70%);
-  font-weight: 500;
-  font-size: 20px;
+  transform: translate(5%, 70%);
+  font-weight: 600;
+  font-size: 23px;
   color: #f9b17a;
   text-decoration: none;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .email:hover {
   text-decoration: underline;
+  color: #fff;
+  text-shadow: 0 0 5px #f9b17a;
 }
 
 .img {
-  position: relative;
-  right: 0;
-  transform: translateY(100%);
+  position: absolute;
+  right: 100px;
+  top: 160px;
   grid-column: 2;
 }
-.img img {
-  width: 300px;
+img {
+  width: 280px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.img:hover {
+  animation: upDown 1s infinite;
+}
+
+@keyframes upDown {
+  0% {
+    top: 160px;
+  }
+  50% {
+    top: 140px;
+  }
+  100% {
+    top: 160px;
+  }
 }
 
 /*----------Bottom----------*/
