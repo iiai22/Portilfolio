@@ -76,6 +76,7 @@ a {
   transform: translateY(10vh);
   bottom: 0;
   z-index: 0;
+  overflow-y: hidden;
 }
 
 .grid {
@@ -135,7 +136,14 @@ a {
   text-decoration: underline;
 }
 
-img {
+.img {
+  position: relative;
+  right: 0;
+  transform: translateY(100%);
+  grid-column: 2;
+}
+.img img {
+  width: 300px;
 }
 
 /*----------Bottom----------*/
