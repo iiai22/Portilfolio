@@ -81,6 +81,9 @@ a {
   bottom: 0;
   z-index: 0;
   overflow-y: hidden;
+  background-image: url('bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .grid {
