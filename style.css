@@ -121,6 +121,21 @@ a {
   letter-spacing: 2px;
 }
 
+.email {
+  position: absolute;
+  transform: translate(10%, 70%);
+  font-weight: 500;
+  font-size: 20px;
+  color: #f9b17a;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
+
+
 /*----------Bottom----------*/
 
 .bottom {
